@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #ff943c;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+  z-index: 99;
+  position: fixed;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+nav a {
+  font-size: 1vw;
+  color: #fff;
+}
+.logo {
+  font-size: medium;
+}
+.center-nav {
+  display: flex;
+  gap: 5vw;
+  font-weight: 600;
+}
+nav i {
+  font-size: 2vw;
+  color: #fff;
+}
+/* one */
+.one {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, orange, rgb(250, 120, 39));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .center-element {
+  width: 36%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+#fanta {
+  width: 20vw;
+  z-index: 1;
+  position: absolute;
+  filter: drop-shadow(15px 16px 16px rgba(10, 10, 10, 0.218));
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#fanta:hover {
+  transform: scale(1.2);
+}
+#orangeslice {
+  position: absolute;
+  width: 12vw;
+  left: 35%;
+  top: 8%;
+  filter: brightness(1.2);
+}
+#orange2 {
+  position: absolute;
+  width: 25vw;
+  right: 26%;
+  bottom: 5%;
+  z-index: 2;
+}
+.title {
+  font-size: 20vw;
+  position: absolute;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#leaf {
+  position: absolute;
+  width: 10vw;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+}
+
+/* two */
+.two {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(102, 49, 49);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.left svg {
+  width: 80%;
+}
+.right {
+  flex-direction: column;
+  color: #fff;
+  gap: 2vh;
+  padding: 0 3vw;
+}
+.right h1 {
+  font-size: 5vw;
+}
+.right p {
+  font-size: 1vw;
+  z-index: 10;
+}
+
+/* three */
+.three {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(102, 49, 49);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  position: relative;
+  overflow: hidden;
+}
+.card {
+  width: 25vw;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 5%;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  position: relative;
+  color: #fff;
+}
+.card:nth-child(1) {
+  background-color: rgb(0, 142, 64);
+}
+.card:nth-child(2) {
+  background-color: #ff6b09;
+}
+.card:nth-child(3) {
+  background-color: rgb(230, 41, 51);
+}
+.card h1 {
+  font-size: 3vw;
+  margin-top: 40vh;
+}
+.card button {
+  padding: 1vw 2vw;
+  width: 80%;
+  font-size: 17px;
+  border-radius: 25px;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: #ffffff;
+}
+.cardcan {
+  width: 80%;
+  height: 70%;
+  object-fit: contain;
+  position: absolute;
+  top: -10%;
+  z-index: 1;
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.cardfruit {
+  width: 80%;
+  position: absolute;
+  top: -20%;
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.three-leaf1 {
+  width: 10vw;
+  position: absolute;
+  left: -10px;
+  bottom: 5%;
+  transform: rotate(100deg);
+}
+.three-leaf2 {
+  width: 12vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
